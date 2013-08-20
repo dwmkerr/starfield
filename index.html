@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Starfield</title>
+		<style>
+			body { 
+				margin: 0px;
+				padding: 0px;
+				font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+				background-color: #000;
+				color: #bbbbbb;
+			}
+			a:visited, a:active, a:link {
+				text-decoration: none;
+				color: #cecece;
+			}
+			a:hover {
+				text-decoration: underline;
+				color: #dfdfdf;
+			}
+			#container {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				z-index: -1;
+			}
+			#info {
+				width: 400px;
+				margin-top:120px;
+				margin-left:auto;
+				margin-right:auto;
+				background-color: rgba(180, 180, 180, 0.2);
+				padding: 60px;
+			}
+			#info h3 { 
+				font-size: 28px;
+				font-weight: lighter;
+				line-height: 36px;
+				text-shadow: rgba(0, 0, 0, 1) 0px 1px 0px;
+			}
+			.bigText { 
+				font-size: 16px;
+				line-height: 24px;			}
+		</style>
+	</head>
+<body>
+	<!-- The main starfield container, fills the entire screen. -->
+	<div id="container"></div>
+
+	<div id="info">
+		<h3>Starfield</h3>
+		<span class="bigText">
+			<p>Starfield is a very simple javascript class that turns a div into
+				a starfield like the one you can see here.</p>
+		</span>
+		<a href="#" onclick="randomise()">Randomise</a> | <a href="starfield.js" target="blank">starfield.js</a>
+	</div>
+
+	<script src="starfield.js"></script>
+	<script>
+		var container = document.getElementById('container');
+		var starfield = new Starfield();
+		starfield.initialise(container);
+		starfield.start();
+
+		function randomise() {
+			starfield.stop();
+			starfield.stars = Math.random()*1000 + 50;
+			starfield.minVelocity = Math.random()*30+5;
+			starfield.maxVelocity = Math.random()*50 + starfield.minVelocity;			
+			starfield.start();
+		}
+	</script>
+</body>
+</html>
