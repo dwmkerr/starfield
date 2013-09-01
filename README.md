@@ -5,6 +5,8 @@ The Starfield class can be used to create a nice Stafield effect in Javascript.
 
 See a Live Example: http://www.dwmkerr.com/experiments/starfield
 
+![Starfield Screenshot](http://www.dwmkerr.com/experiments/starfield/screenshot.jpg "Starfield Screenshot")
+
 You create a div that will contain the Starfield, and initialise it with the code below:
 
 ````JavaScript
