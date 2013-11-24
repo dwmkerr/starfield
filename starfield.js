@@ -24,13 +24,13 @@ Starfield.prototype.initialise = function(div) {
 	self.width = window.innerWidth;
 	self.height = window.innerHeight;
 
-	window.onresize = function(event) {
+	window.addEventListener('resize', function resize(event) {
 		self.width = window.innerWidth;
 		self.height = window.innerHeight;
 		self.canvas.width = self.width;
 		self.canvas.height = self.height;
 		self.draw();
- 	}
+	});
 
 	//	Create the canvas.
 	var canvas = document.createElement('canvas');
