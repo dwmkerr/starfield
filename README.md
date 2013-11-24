@@ -67,3 +67,10 @@ starfield.minVelocity = 5;  //  The minimum star velocity in pixels per second.
 starfield.maxVelocity = 15; //  The maximum star velocity in pixels per second.	
 
 ````
+
+Learning More
+-------------
+
+This is the code example for the first part of my series 'Learn Javascript'. You can find the full article at:
+
+http://www.codeproject.com/Articles/642499/Learn-JavaScript-Part-1-Create-a-Starfield
