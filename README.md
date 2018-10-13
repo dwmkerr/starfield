@@ -1,6 +1,8 @@
 starfield
 =========
 
+[![GuardRails badge](https://badges.production.guardrails.io/dwmkerr/starfield.svg)](https://www.guardrails.io)
+
 The Starfield class can be used to create a nice Stafield effect in Javascript.
 
 See a Live Example: http://www.dwmkerr.com/experiments/starfield
