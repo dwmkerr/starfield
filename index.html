@@ -12,11 +12,10 @@
 			}
 			a:visited, a:active, a:link {
 				text-decoration: none;
-				color: #cecece;
+				color: white;
 			}
 			a:hover {
-				text-decoration: underline;
-				color: #dfdfdf;
+				color: yellow;
 			}
 			#container {
 				width: 100%;
@@ -55,10 +54,25 @@
 			<p>Starfield is a very simple javascript class that turns a div into
 				a starfield like the one you can see here.</p>
 		</span>
-		<a href="#" onclick="randomise()">Randomise</a> | <a href="starfield.js" target="blank">starfield.js</a> |
-		<a href="https://github.com/dwmkerr/starfield">GitHub</a>
-		<p><a href="http://www.dwmkerr.com">Back to dwmkerr.com</a> or <a href="http://www.dwmkerr.com/experiments">back to the 
-			experiments page</a>.</p>
+		
+		<p>
+		Actions:
+		<a href="#" onclick="randomise()">Randomise</a> | 
+		<a href="#" onclick="hideMessage()">Hide message</a>
+		</p>
+				
+		<p>
+		Source Code:
+		<a href="starfield.js" target="blank">starfield.js</a> | 
+		<a href="https://github.com/dwmkerr/starfield">Starfield on GitHub</a>
+		</p>
+		
+		<p>
+		Dave Kerr:
+		<a href="http://www.dwmkerr.com">dwmkerr.com</a> | 
+		<a href="http://www.dwmkerr.com/experiments">Experiments</a></p>
+		</p>
+		
 	</div>
 
 	<script src="starfield.js"></script>
@@ -74,6 +88,10 @@
 			starfield.minVelocity = Math.random()*30+5;
 			starfield.maxVelocity = Math.random()*50 + starfield.minVelocity;			
 			starfield.start();
+		}
+		
+		function hideMessage(){
+			info.style.visibility = "hidden" ;
 		}
 	</script>
 	<script type="text/javascript">
