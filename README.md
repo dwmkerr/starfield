@@ -1,12 +1,15 @@
-# starfield
+# Starfield
 
-The Starfield class can be used to create a nice Stafield effect in Javascript.
+Starfield is a JavsScript class that displays an animated starfield in a `div` element.
 
-See a Live Example: https://dwmkerr.github.io/starfield/
+Live Example: https://dwmkerr.github.io/starfield/
 
-[![Starfield Screenshot](./images/screenshot.jpg "Starfield Screenshot")](https://dwmkerr.github.io/starfield/)
+[![Starfield Screenshot](./images/starfield.gif "Starfield Screenshot")](https://dwmkerr.github.io/starfield/)
 
-You create a div that will contain the Starfield, and initialise it with the code below:
+
+## Quickstart
+
+Create a HTML `div` initialize a `Starfield` like this:
 
 ```js
 var container = document.getElementById('container');
@@ -15,11 +18,9 @@ starfield.initialise(container);
 starfield.start();
 ```
 
-That's all there is too it!
+## Full-Code Example
 
-## A Simple Example
-
-Create a webpage with the HTML below, make sure that the starfield.js file is in the same directory:
+_Ensure starfield.js file is in the same directory as the HTML file._
 
 ```html
 <!DOCTYPE html>
@@ -52,7 +53,7 @@ Create a webpage with the HTML below, make sure that the starfield.js file is in
 </html>
 ```
 
-## Configuration Options
+## Configuration
 
 You can configure the Starfield by setting the following properties on the class:
 
@@ -65,6 +66,6 @@ starfield.maxVelocity = 15; //  The maximum star velocity in pixels per second.
 
 ## Learning More
 
-This is the code example for the first part of my series 'Learn Javascript'. You can find the full article at:
+This code was created for **[Create a Starfield](codeproject.com/Articles/642499/Learn-JavaScript-Part-1-Create-a-Starfield)**, the first article of my _Learn JavaScript_ series on CodeProject.
 
-http://www.codeproject.com/Articles/642499/Learn-JavaScript-Part-1-Create-a-Starfield
+
