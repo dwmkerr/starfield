@@ -1,5 +1,7 @@
 # Starfield
 
+[![Buy me a coffee](https://img.shields.io/badge/thanks-buy%20me%20a%20coffee-ea4aaa?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/dwmkerr?frequency=one-time)
+
 Starfield is a JavsScript class that displays an animated starfield in a `div` element.
 
 Live Example: https://dwmkerr.github.io/starfield/
