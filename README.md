@@ -1,5 +1,7 @@
 # Starfield
 
+[![Donate](https://img.shields.io/badge/thanks-donate-ea4aaa?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/dwmkerr/sponsorships?frequency=one-time&amount=5)
+
 Starfield is a JavsScript class that displays an animated starfield in a `div` element.
 
 Live Example: https://dwmkerr.github.io/starfield/
